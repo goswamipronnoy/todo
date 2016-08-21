@@ -26,6 +26,7 @@
       width: 80%;
       font-size: 2em;
       text-align: center;
+      word-wrap: break-word;
     }
   }
 }
@@ -37,13 +38,13 @@
   padding: 0;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
 
   .taskItem {
     list-style: none;
     background-color: #e8e3e3;
     margin: 2px 0;
     padding-left: 1em;
-    height: 35px;
     line-height: 35px;
     display: flex;
 
@@ -54,6 +55,8 @@
       justify-content: space-between;
       width: 40px;
       padding-right: 1em;
+      max-width: 3em;
+      min-width: 3em;
     }
   }
 }
